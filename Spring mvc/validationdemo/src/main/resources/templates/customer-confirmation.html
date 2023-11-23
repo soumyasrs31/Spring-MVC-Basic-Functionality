@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Confirmation Form</title>
+</head>
+<body>
+The person name is: <span th:text="${customer.firstName +' ' + customer.lastName}"></span>
+<br><br>
+Your number range is: <span th:text="${customer.numRange}"/>
+<br><br>
+Your postal code is: <span th:text="${customer.postalCode}"/>
+<br><br>
+Your course code is: <span th:text="${customer.courseCode}"/>
+</body>
+</html>

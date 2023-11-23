@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Response page</title>
+</head>
+<body>
+<h3>Student Response Page</h3>
+The Student name is : <span th:text="${student.firstName}+' '+${student.lastName}"/>
+<br><br>
+Country : <span th:text="${student.country}"/>
+<br><br>
+My Favorite Language : <span th:text="${student.favoriteLanguage}"/>
+<br><br>
+Favorite Systems : <!--<span th:text="${student.favoriteSystems}"/>-->
+<ul>
+    <li th:each="tempSystem : ${student.favoriteSystems}" th:text="${tempSystem}"/>
+</ul>
+</body>
+</html>
